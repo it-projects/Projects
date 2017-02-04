@@ -13,5 +13,15 @@ namespace Rest.Controllers
         {
             return View();
         }
+
+        public ActionResult Galery()
+        {
+            return View();
+        }
+
+        public ActionResult Contact()
+        {
+            return View();
+        }
     }
 }

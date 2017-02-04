@@ -23,12 +23,36 @@
     <title>Prototip</title>
 </head>
 <body>
-    <div>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img src="#" />
+                <div class="navbar-collapse collapse">
+                    <div class="container">
+                        <ul class="nav navbar-nav" >
+                            <li class="active">@Html.ActionLink("Domů", "Home", "Index")</li>
+                            <li class="active">@Html.ActionLink("Galerie", "Home", "Galery")</li>
+                            <li class="active">@Html.ActionLink("Kontakt", "Home", "Contact")</li>
+                        </ul>
+                        <ul class="navbar-right">
+                            <li>nwco</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
         @RenderBody();
-
     </div>
 
-
+    
     <!--SCRIPTS-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="~Scripts/jquery-1.9.0.min.js"><\/script>')</script>
