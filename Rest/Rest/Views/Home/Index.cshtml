@@ -3,4 +3,8 @@
    ViewBag.Title = "Domů";
 }
 
-<h1 class="jumbotron">@ViewBag.Title</h1>
+
+<div class="blog-post text-justify">
+    <h4 class="font-bety center-top">@Model.HeadTitle @Model.Title</h4>
+    <p class="lead blog-description">@Model.Text</p>
+</div>
