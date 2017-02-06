@@ -23,10 +23,110 @@
     <title>Prototip</title>
 </head>
 <body>
-    <div>
-        @RenderBody();
+    <div class="navbar-wrapper">
+        <div class="container">
+            <nav class="navbar navbar-fixed-top">
+                <div class="container navbar-color">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div id="navbar" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav bold">
+                            <li>
+                                <img src="~/Images/Icon/rest-stramber_zelena1.png" style="margin-right: 13px; margin-top: 5px;" />
+                            </li>
+                            <li class="font-color">
+                                @Html.ActionLink("Domů", "Index", "Home")
+                            </li>
+                            <li class="active">
+                                @Html.ActionLink("Galerie", "Galery", "Home")
+                            </li>
+                            <li class="active">
+                                @Html.ActionLink("Kontakt", "Contact", "Home")
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="active">
+                                @Html.ActionLink("Login", "_Login", "Login")
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>  <!--MENU-->
 
-    </div>
+  <div id="#head" class="container container-background center-top">          
+    <div class="col-sm-8 blog-main">
+        <div class="blog-header">
+            @RenderBody()
+
+
+        </div>
+    </div><!-- /.blog-main -->
+    <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+        <div class="sidebar-module">
+            <h4 class="font-bety center-top">Týdení menu</h4>
+            <iframe class="frame"></iframe>
+        </div>
+
+        <div class="sidebar-module">
+            <h4 class="font-bety">Jídelní lístek</h4>
+            <iframe class="frame"></iframe>
+        </div>
+
+    </div><!-- /.row -->
+
+    <footer class="foot">
+        <p class="pull-right">
+
+            <a href="#head">
+                <img src="~/Images/Others/nahoru1.png" />
+            </a>
+
+        </p>
+        <p>
+            @DateTime.Now.Date.ToShortDateString() &middot; @Html.ActionLink("Domů", "Index", "Home") &middot; @Html.ActionLink("Galerie", "Galery", "Home") &middot; @Html.ActionLink("Kontakt", "Contact", "Home")
+        </p>
+        <table class="table-responsive">
+            <tr>
+                <th></th>
+                <th>
+                    <img src="~/Images/Icon/rest-stramber_zelena1.png" />
+                </th>
+            </tr>
+            <tr>
+                <th></th>
+                <th>@Model.Adress</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th>@Model.PostCode @Model.City</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th>@Model.Company </th>
+            </tr>
+            <tr>
+                <th></th>
+                <th>@Model.Phone</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th>@Model.Email</th>
+            </tr>
+        </table>
+    </footer>
+    </div><!-- /.container -->
+        
+
+   
 
 
     <!--SCRIPTS-->

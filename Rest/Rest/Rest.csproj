@@ -109,6 +109,8 @@
     <Content Include="Content\Styles.less" />
     <Content Include="fonts\Thinking_of_Betty.ttf" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Images\Icon\rest-stramber_zelena1.png" />
+    <Content Include="Images\Others\pozadi_leto.jpg" />
     <Content Include="Models\XML_Login.xml" />
     <Content Include="Models\XML_Text.xml" />
     <Content Include="Scripts\bootstrap-support-ie10-width.js" />
@@ -128,6 +130,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -138,12 +141,14 @@
   <ItemGroup>
     <Content Include="Views\web.config" />
     <Content Include="packages.config" />
-    <Content Include="Views\_StartView.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\jquery-1.9.1.min.map" />
     <Content Include="Views\Home\Galery.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Login\Form.cshtml" />
+    <Content Include="Views\Login\_Login.cshtml" />
+    <Content Include="Views\_ViewStart.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

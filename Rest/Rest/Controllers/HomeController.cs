@@ -13,11 +13,11 @@ namespace Rest.Controllers
     {
 
         Document doc = new Document();
-        ReadClass read = new ReadClass();
+        public ReadClass read = new ReadClass();
 
-        Collection<string> pom;
+        public Collection<string> pom;
 
-        private Document Doc_read()
+        public Document Doc_read()
         {
             pom = read.Text_reader();
 
