@@ -1,4 +1,6 @@
-﻿namespace Rest.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Rest.Models
 {
     public class Document
     {
@@ -14,5 +16,17 @@
         public string Phone { get; set; }
         public string Email { get; set; }
         public string Ico { get; set; }
+
+        [Required(ErrorMessage = "Pole je povinné!")]
+        [MaxLength(6, ErrorMessage = "Špatné jméno!")]
+        public string LoginName { get; set; }
+
+        [Required(ErrorMessage = "Pole je povinné!")]
+        [MaxLength(6, ErrorMessage = "Špatné heslo!")]
+        public string LoginPassword { get; set; }
+
+        public string LoginEmail { get; set; }
+
+        public bool predicate { get; set; }
     }
 }

@@ -1,6 +1,51 @@
-﻿
+﻿@model Rest.Models.Document
+
 @{
-   ViewBag.Title= "Formulář";
+   ViewBag.Title= "Nahrát soubor";
 }
 
-<h1>@ViewBag.title</h1>
+
+@if(Model.predicate == true)
+{ 
+    <div class="form-signin">
+        <form>
+            <h2 class="form-signin-heading font-bety">@ViewBag.Title</h2>
+                @Html.ValidationSummary()
+                @using (Html.BeginForm("JL_Pdf", "Login", FormMethod.Post))
+                {
+            <div class="form-group">
+                <input type="file" />
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Odeslat Jídelní lístek</button>
+            </div>
+                }
+                @Html.ValidationSummary()
+                @using (Html.BeginForm("Menu_Pdf", "Login", FormMethod.Post))
+                {
+            <div class="form-group">
+                <input type="file" />
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Odeslat Menu</button>
+            </div>
+            }
+            @Html.ValidationSummary()
+            @using (Html.BeginForm("Akce_Pdf", "Login", FormMethod.Post))
+            {
+            <div class="form-group">
+                <input type="file" />
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Odeslat Akce</button>
+            </div>
+            }
+            @Html.ValidationSummary()
+            @using (Html.BeginForm("Log_Out", "Login", FormMethod.Post))
+            {
+                <div class="form-group">
+                    <button class="btn btn-lg btn-primary btn-block" type="submit">Odhlásit</button>
+                </div>
+            }
+
+        </form>
+    </div>
+}
+else
+{
+    <h1>Dobý pokus :-)!</h1>
+}
