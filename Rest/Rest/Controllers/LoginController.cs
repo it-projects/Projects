@@ -1,6 +1,7 @@
 ﻿using Rest.Models;
 using System.Collections.ObjectModel;
 using System.IO;
+using System.Web;
 using System.Web.Mvc;
 using System.Web.UI.WebControls;
 using XML_Reader;
@@ -54,31 +55,50 @@ namespace Rest.Controllers
             return View("_Login", doc);
         }
 
+        [HttpPost]
         public ActionResult Log_Out()
         {
             Document();
             return View("_Login", doc);
         }
 
-        public ActionResult JL_Pdf(FileStream  pdf)
+        [HttpPost]
+        public ActionResult JL_Pdf(HttpPostedFileBase  Jl)
         {
             string JL = "JL.pdf";
-       
-            return View();
+
+            if(Jl.FileName == JL)
+            {
+                Jl.SaveAs(Server.MapPath("~/Files/") + Jl.FileName);
+            }
+            Document();
+            return View("_Login", doc);
         }
 
-        public ActionResult Menu_Pdf(FileStream pdf)
+        [HttpPost]
+        public ActionResult Menu_Pdf(HttpPostedFileBase Menu)
         {
-            string Menu = "Menu.pdf";
-        
-            return View();
+            string menu = "Menu.pdf";
+
+            if (Menu.FileName == menu)
+            {
+                Menu.SaveAs(Server.MapPath("~/Files/") + Menu.FileName);
+            }
+            Document();
+            return View("_Login", doc);
         }
 
-        public ActionResult Akce_Pdf(FileStream pdf)
+        [HttpPost]
+        public ActionResult Akce_Pdf(HttpPostedFileBase Akce)
         {
-            string Akce = "Akce";
+            string akce = "Akce.pdf";
 
-            return View();
+            if (Akce.FileName == akce)
+            {
+                Akce.SaveAs(Server.MapPath("~/Files/") + Akce.FileName);
+            }
+            Document();
+            return View("_Login", doc);
         }
 
         // GET: Login

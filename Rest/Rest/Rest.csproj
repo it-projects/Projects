@@ -108,9 +108,18 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\Styles.less" />
     <Content Include="fonts\Thinking_of_Betty.ttf" />
+    <Content Include="Files\Akce.pdf" />
+    <Content Include="Files\JL.pdf" />
+    <Content Include="Files\Menu.pdf" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Images\Galery\IMG_1.JPG" />
+    <Content Include="Images\Galery\IMG_2.JPG" />
     <Content Include="Images\Icon\rest-stramber_zelena1.png" />
+    <Content Include="Images\Others\kureci.jpg" />
+    <Content Include="Images\Others\polevka.jpg" />
     <Content Include="Images\Others\pozadi_leto.jpg" />
+    <Content Include="Images\Others\spiz.jpg" />
+    <Content Include="Images\Others\steak.jpg" />
     <Content Include="Models\XML_Login.xml" />
     <Content Include="Models\XML_Text.xml" />
     <Content Include="Scripts\bootstrap-support-ie10-width.js" />
@@ -158,16 +167,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Files\" />
-    <Folder Include="Images\Galery\1\" />
-    <Folder Include="Images\Galery\2\" />
-    <Folder Include="Images\Galery\3\" />
-    <Folder Include="Images\Galery\4\" />
-    <Folder Include="Images\Galery\5\" />
-    <Folder Include="Images\Galery\6\" />
-    <Folder Include="Images\Galery\7\" />
-    <Folder Include="Images\Galery\8\" />
-    <Folder Include="Images\Galery\9\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\XML_Reader\XML_Reader\XML_Reader.csproj">

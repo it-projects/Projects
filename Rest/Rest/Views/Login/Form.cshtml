@@ -5,36 +5,36 @@
 }
 
 
-@if(Model.predicate == true)
-{ 
+@if (Model.predicate == true)
+{
     <div class="form-signin">
         <form>
             <h2 class="form-signin-heading font-bety">@ViewBag.Title</h2>
-                @Html.ValidationSummary()
-                @using (Html.BeginForm("JL_Pdf", "Login", FormMethod.Post))
+
+@using (Html.BeginForm("JL_Pdf", "Login", FormMethod.Post, new { @enctype = "multipart/form-data" }))
+{
+}
+                @using (Html.BeginForm("JL_Pdf", "Login", FormMethod.Post, new { @enctype = "multipart/form-data" }))
                 {
             <div class="form-group">
-                <input type="file" />
+                <input type="file" name="Jl" />
                 <button class="btn btn-lg btn-primary btn-block" type="submit">Odeslat Jídelní lístek</button>
             </div>
                 }
-                @Html.ValidationSummary()
-                @using (Html.BeginForm("Menu_Pdf", "Login", FormMethod.Post))
+                @using (Html.BeginForm("Menu_Pdf", "Login", FormMethod.Post, new { @enctype = "multipart/form-data" }))
                 {
             <div class="form-group">
-                <input type="file" />
+                <input type="file" name="Menu" />
                 <button class="btn btn-lg btn-primary btn-block" type="submit">Odeslat Menu</button>
             </div>
             }
-            @Html.ValidationSummary()
-            @using (Html.BeginForm("Akce_Pdf", "Login", FormMethod.Post))
+            @using (Html.BeginForm("Akce_Pdf", "Login", FormMethod.Post, new { @enctype = "multipart/form-data" }))
             {
             <div class="form-group">
-                <input type="file" />
+                <input type="file" name="Akce" />
                 <button class="btn btn-lg btn-primary btn-block" type="submit">Odeslat Akce</button>
             </div>
             }
-            @Html.ValidationSummary()
             @using (Html.BeginForm("Log_Out", "Login", FormMethod.Post))
             {
                 <div class="form-group">
@@ -47,5 +47,5 @@
 }
 else
 {
-    <h1>Dobý pokus :-)!</h1>
+    <h1 class="center-block">Dobý pokus :-)!</h1>
 }
