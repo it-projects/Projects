@@ -16,6 +16,8 @@
     <link href="~/Content/bootstrap.min.css" rel="stylesheet"/>
     <link href="~/Content/bootstrap-theme.min.css" rel="stylesheet"/>
     <link href="~/Content/bootstrap-support-ie10-width.css" rel="stylesheet" />
+    
+
 
     <!--STYLES-->
     <link href="~/Content/Styles.less" rel="stylesheet" />
@@ -24,7 +26,7 @@
 </head>
 <body>
     <div class="navbar-wrapper">
-        <div class="container">
+        <div id="head" class="container">
             <nav class="navbar navbar-fixed-top">
                 <div class="container navbar-color">
                     <div class="navbar-header">
@@ -45,7 +47,7 @@
                                 @Html.ActionLink("Domů", "Index", "Home")
                             </li>
                             <li class="active">
-                                @Html.ActionLink("Galerie", "Galery", "Home")
+                                @Html.ActionLink("Galerie", "Gallery", "Home")
                             </li>
                             <li class="active">
                                 @Html.ActionLink("Kontakt", "Contact", "Home")
@@ -62,7 +64,7 @@
         </div>
     </div>  <!--MENU-->
 
-  <div id="#head" class="container container-background center-top">          
+  <div class="container container-background">          
     <div class="col-sm-8 blog-main">
         <div class="blog-header">
 
@@ -72,6 +74,13 @@
         </div>
     </div><!-- /.blog-main -->
     <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+        <div class="sidebar-module">
+            <a href="~/Files/JL.pdf">
+                <h4 class="font-bety">Pozvánka na akce</h4>
+                <img class="img-responsive" src="~/Images/Galery/Preview/IMG_4.jpg" />
+            </a>
+        </div>
+
         <div class="sidebar-module">
             <a href="~/Files/Menu.pdf">
                 <h4 class="font-bety center-top">Týdení menu</h4>
@@ -89,22 +98,29 @@
     </div><!-- /.row -->
 
     <footer class="foot">
-        <p class="pull-right">
-
-            <a href="#head">
-                <img src="~/Images/Others/nahoru1.png" />
-            </a>
-
+        <table class="table-responsive pull-right">
+            <tr>
+                <th class="center-top"><a href="#head">
+                     <img src="~/Images/Others/nahoru1.png" />
+                    </a>
+                </th>
+            </tr>
+            
+            <tr>
+                <th><a href="#">
+                      <img src="~/Images/Others/ITprogram_logo.png" />
+                    </a>
+                </th>
+            </tr>         
+        </table>
+       <p>
+             @DateTime.Now.Date.ToShortDateString() &middot; @Html.ActionLink("Domů", "Index", "Home") &middot; @Html.ActionLink("Galerie", "Galery", "Home") &middot; @Html.ActionLink("Kontakt", "Contact", "Home")
         </p>
-        <p>
-            @DateTime.Now.Date.ToShortDateString() &middot; @Html.ActionLink("Domů", "Index", "Home") &middot; @Html.ActionLink("Galerie", "Galery", "Home") &middot; @Html.ActionLink("Kontakt", "Contact", "Home")
-        </p>
+
         <table class="table-responsive">
             <tr>
                 <th></th>
-                <th>
-                    <img src="~/Images/Icon/rest-stramber_zelena1.png" />
-                </th>
+                <th><img src="~/Images/Icon/rest-stramber_zelena1.png" /></th>
             </tr>
             <tr>
                 <th></th>
@@ -127,6 +143,7 @@
                 <th>@Model.Email</th>
             </tr>
         </table>
+        
     </footer>
     </div><!-- /.container -->
         
@@ -141,6 +158,8 @@
     <script src="~/Scripts/jquery.validate.min.js"></script>
     <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
     <script src="~/Scripts/bootstrap-support-ie10-width.js"></script>
+
+    <script src="~/Scripts/gallery.js"></script>
  
 </body>
 </html>

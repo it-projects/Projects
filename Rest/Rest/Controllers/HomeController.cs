@@ -43,7 +43,7 @@ namespace Rest.Controllers
             return View(Doc_read());
         }
 
-        public ActionResult Galery()
+        public ActionResult Gallery()
         {
             return View(Doc_read());
         }
