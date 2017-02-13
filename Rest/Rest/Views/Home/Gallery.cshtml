@@ -1,0 +1,80 @@
+﻿@{
+    ViewBag.Title = "Galerie";
+}
+
+
+<div class="center-top">
+    <h2 class="font-bety">@ViewBag.Title</h2>
+</div>
+    <div id="preview-gallery" class="container">
+
+        <div class="row">
+            <div class="col-md-4">            
+                    <div id="start1" class="col-md-12 center-block">
+                        <img class="img-rounded" src="~/Images/Galery/Preview/IMG_1.jpg">
+                        <div class="col-md-8 center-block">
+                            <p>Ples čarodějnic</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-md-4">
+                <div id="start2" class="col-md-12 center-block">
+                    <img class="img-rounded" src="~/Images/Galery/Preview/IMG_2.jpg">
+                    <div class="col-md-8 center-block">
+                        <p>Maškarní ples</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div id="start3" class="col-md-12 center-block">
+                    <img class="img-rounded" src="~/Images/Galery/Preview/IMG_3.jpg">
+                    <div class="col-md-8 center-block">
+                        <p>Ples 30 léta</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div id="start4" class="col-md-12 center-block">
+                    <img class="img-rounded" src="~/Images/Galery/Preview/IMG_4.jpg">
+                    <div class="col-md-8 center-block">
+                        <p>Ples upírů</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div id="start5" class="col-md-12 center-block">
+                    <img class="img-rounded" src="~/Images/Galery/Preview/IMG_5.jpg">
+                    <div class="col-md-8 center-block">
+                        <p>Dorty</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div id="start6" class="col-md-12 center-block">
+                    <img class="img-rounded" src="~/Images/Galery/Preview/IMG_6.JPG">
+                    <div class="col-md-8 center-block">
+                        <p>Tabule</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+<!--LITEBOX-->  
+<div id="gallery" class="gallery">
+    <div class="carousel">
+        <div class="photo-galery">
+            <div class="navbar-btn" style="margin-left:15px;">
+                <button id="preview" type="button" class="btn btn-default prev">&lt; Předchozí</button>
+                <button id="next" type="button" class="btn btn-default next">Další &gt;</button>
+                <button id="close" type="button" class="gallery-btn close" aria-hidden="true">&times;</button>
+            </div>
+            <div id="photoBody" class="col-lg-12"></div>
+                
+       </div>
+    </div>
+</div>

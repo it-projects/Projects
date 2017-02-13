@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "Kontakt";
+}
+
+<div class="row center-top">
+    <div class="blog-post">
+
+
+        <h2 class="font-bety">@ViewBag.Title</h2>
+
+        <div class="col-md-5">
+            <table class="table-responsive small table-condensed" style="color: #2e2929; margin-top: 5%">
+                <tr>
+                    <th>Jméno:</th>
+                    <th>Ester Polednová</th>
+                </tr>
+                <tr>
+                    <th>Adresa:</th>
+                    <th>@Model.Adress</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th>@Model.PostCode @Model.City</th>
+                </tr>
+                <tr>
+                    <th>Telefon:</th>
+                    <th>@Model.Phone</th>
+                </tr>
+                <tr>
+                    <th>Email:</th>
+                    <th>@Model.Email</th>
+                </tr>
+            </table>
+        </div>
+        <p class="lead"></p>
+
+        <div class="col-md-5">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2586.3352987783414!2d18.115160585472704!3d49.5914261352458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x77ea5ffbb301aae8!2zUGVuemlvbiBTdGFyw6EgxaFrb2xh!5e0!3m2!1scs!2scz!4v1485871704383" width="350" height="350" style="border: 0;" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>

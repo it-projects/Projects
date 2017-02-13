@@ -1,2 +1,393 @@
-﻿body {
+﻿/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+@font-face {
+    font-family: Thinking of Betty;
+    src: url("../fonts/Thinking_of_Betty.ttf");
 }
+
+body {
+    background-image: url("../Images/Others/pozadi_leto.jpg");
+    background-repeat:no-repeat;
+    color: black;
+    margin-top: 40px;
+    padding-left: 40px;
+    padding-top:40px;
+    padding-right:40px;
+}
+
+a {color: #8b4513;}
+
+th {color: #2e2929;}
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+
+.navbar-wrapper {
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+
+.navbar-wrapper > .container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.navbar-wrapper .navbar {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.navbar-wrapper .navbar .container { width: auto; }
+
+.navbar-color {
+    background-color: rgba(238, 232, 170, 0.9);
+    text-decoration-color: #555555;
+}
+
+.center-top {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.center-lr{
+    margin-left:10px;
+    margin-right:10px;
+}
+
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+
+.carousel {
+    height: 500px;
+    margin-bottom: 60px;
+}
+
+/* Since positioning the image, we need to help out the caption */
+
+.carousel-caption { z-index: 10; }
+
+/* Declare heights because of positioning of img element */
+
+.carousel .item {
+    background-color: #777;
+    height: 500px;
+}
+
+.carousel-inner > .item > img {
+    height: 500px;
+    left: 0;
+    min-width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+
+.marketing .col-lg-4 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.marketing h2 { font-weight: normal; }
+
+.marketing .col-lg-4 p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+    margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+
+.featurette-heading {
+    font-weight: 300;
+    letter-spacing: -1px;
+    line-height: 1;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+    /* Navbar positioning foo */
+    .navbar-wrapper { margin-top: 20px; }
+
+    .navbar-wrapper .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .navbar-wrapper .navbar {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* The navbar becomes detached from the top, so we round the corners */
+    .navbar-wrapper .navbar { border-radius: 4px; }
+
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+        font-size: 21px;
+        line-height: 1.4;
+        margin-bottom: 20px;
+    }
+
+    .featurette-heading { font-size: 50px; }
+}
+
+@media (min-width: 992px) {
+    .featurette-heading { margin-top: 120px; }
+}
+
+/*
+ * Globals
+ */
+
+
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    font-weight: normal;
+    margin-top: 0;
+}
+
+
+/*
+ * Override Bootstrap's default container.
+ */
+
+@media (min-width: 1200px) {
+    .container { width: 970px; }
+}
+
+
+/*
+ * Masthead for nav
+ */
+
+.blog-masthead {
+    -webkit-box-shadow: inset 0 -2px 5px rgba(0, 0, 0, .1);
+    background-color: #428bca;
+    box-shadow: inset 0 -2px 5px rgba(0, 0, 0, .1);
+}
+
+/* Nav links */
+
+.blog-nav-item {
+    color: #cdddeb;
+    display: inline-block;
+    font-weight: 500;
+    padding: 10px;
+    position: relative;
+}
+
+.blog-nav-item:hover,
+.blog-nav-item:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Active state gets a caret at the bottom */
+
+.blog-nav .active { color: black; }
+
+.blog-nav .active:after {
+    border-bottom: 5px solid;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    bottom: 0;
+    content: " ";
+    height: 0;
+    left: 50%;
+    margin-left: -5px;
+    position: absolute;
+    vertical-align: middle;
+    width: 0;
+}
+
+
+/*
+ * Blog name and description
+ */
+
+.blog-header {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.blog-title {
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 0;
+    margin-top: 30px;
+}
+
+.blog-description {
+    color: #2e2929;
+    font-size: 20px;
+}
+
+
+/*
+ * Main column and sidebar layout
+ */
+
+.blog-main {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Sidebar modules for boxing content */
+
+.sidebar-module {
+    margin: 0 -15px 15px;
+    padding: 15px;
+}
+
+.sidebar-module-inset {
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    padding: 15px;
+}
+
+.sidebar-module-inset p:last-child,
+.sidebar-module-inset ul:last-child,
+.sidebar-module-inset ol:last-child { margin-bottom: 0; }
+
+
+/* Pagination */
+
+.pager {
+    margin-bottom: 60px;
+    text-align: left;
+}
+
+.pager > li > a {
+    border-radius: 30px;
+    padding: 10px 20px;
+    text-align: center;
+    width: 140px;
+}
+
+
+/*
+ * Blog posts
+ */
+
+.blog-post {
+    margin-bottom: 60px;
+    margin-left: 15px;
+}
+
+.blog-post-title {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.blog-post-meta {
+    color: #2e2929;
+    margin-bottom: 20px;
+}
+
+
+/*
+ * Footer
+ */
+
+.blog-footer p:last-child { margin-bottom: 0; }
+
+.gallery-color{
+    background-color:white;
+}
+
+
+.foot {
+    margin-top:30px;
+    margin-left: 40px;
+    margin-right:20px;
+}
+
+.font-bety {
+    color: #8b4513;
+    font-family: Thinking of Betty;
+}
+
+.bold {
+    text-decoration:none;
+    font: bold 21px Helvetica;
+}
+
+.container-background { 
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 20px;
+}
+
+@media(min-width: 1000px ){
+    #navbar{
+    margin-left:150px;
+    margin-right:150px;
+    padding-left:40px;
+    padding-right:40px;
+    }
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="text"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+

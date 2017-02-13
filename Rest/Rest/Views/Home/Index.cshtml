@@ -1,6 +1,18 @@
-﻿
+﻿@model Rest.Models.Document
 @{
    ViewBag.Title = "Domů";
 }
 
-<h1>@ViewBag.Title</h1>
+
+<div class="blog-post text-justify">
+    <h4 class="font-bety center-top">@Model.HeadTitle @Model.Title</h4>
+    <p class="lead blog-description">@Model.Text</p>
+
+
+    <div class="col-lg-8">
+        <a href="~/Files/Akce.pdf">
+            <h4 class="center-top font-bety">Pozvánka na akce</h4>
+            <img class="img-responsive" src="~/Images/Galery/Preview/IMG_4.jpg" />
+        </a>
+    </div>
+</div>

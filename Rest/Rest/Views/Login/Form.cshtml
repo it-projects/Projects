@@ -1,0 +1,51 @@
+﻿@model Rest.Models.Document
+
+@{
+   ViewBag.Title= "Nahrát soubor";
+}
+
+
+@if (Model.predicate == true)
+{
+    <div class="form-signin">
+        <form>
+            <h2 class="form-signin-heading font-bety">@ViewBag.Title</h2>
+
+@using (Html.BeginForm("JL_Pdf", "Login", FormMethod.Post, new { @enctype = "multipart/form-data" }))
+{
+}
+                @using (Html.BeginForm("JL_Pdf", "Login", FormMethod.Post, new { @enctype = "multipart/form-data" }))
+                {
+            <div class="form-group">
+                <input type="file" name="Jl" />
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Odeslat Jídelní lístek</button>
+            </div>
+                }
+                @using (Html.BeginForm("Menu_Pdf", "Login", FormMethod.Post, new { @enctype = "multipart/form-data" }))
+                {
+            <div class="form-group">
+                <input type="file" name="Menu" />
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Odeslat Menu</button>
+            </div>
+            }
+            @using (Html.BeginForm("Akce_Pdf", "Login", FormMethod.Post, new { @enctype = "multipart/form-data" }))
+            {
+            <div class="form-group">
+                <input type="file" name="Akce" />
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Odeslat Akce</button>
+            </div>
+            }
+            @using (Html.BeginForm("Log_Out", "Login", FormMethod.Post))
+            {
+                <div class="form-group">
+                    <button class="btn btn-lg btn-primary btn-block" type="submit">Odhlásit</button>
+                </div>
+            }
+
+        </form>
+    </div>
+}
+else
+{
+    <h1 class="center-block">Dobý pokus :-)!</h1>
+}
