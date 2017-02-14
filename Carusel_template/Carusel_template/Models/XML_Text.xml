@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<document>
+  <title-carusel>
+    <carusel-title1></carusel-title1>
+    <carucel-title2></carucel-title2>
+    <carusel-title3></carusel-title3>
+    <carusel-title4></carusel-title4>
+  </title-carusel>
+  <text-carusel>
+    <carusel-text1></carusel-text1>
+    <carusel-text2></carusel-text2>
+    <carusel-text3></carusel-text3>
+    <carusel-text4></carusel-text4>
+  </text-carusel>
+</document>
