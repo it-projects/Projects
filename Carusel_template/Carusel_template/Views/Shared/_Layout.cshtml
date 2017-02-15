@@ -46,11 +46,13 @@
         </div>
     </div>
 
-    <div id="body-cont">
+    <div id="body-content">
         @RenderBody()
         <hr />
         <footer>
-            <p> @DateTime.Now.Date.ToShortDateString() &bull; @Model.Email  &bull; @Model.Phone  &bull; @Model.Address  &bull; @Model.ItFirma </p>
+            <div class="container">
+                <p> @DateTime.Now.Date.ToShortDateString() &bull; @Model.Email  &bull; @Model.Phone  &bull; @Model.Address  &bull; @Model.ItFirma </p>
+            </div>
         </footer>
     </div>
 

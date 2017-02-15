@@ -3,3 +3,40 @@
     ViewBag.Title = "Kontakt";
 
 }
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-5">
+            <br />
+            <h1>@ViewBag.Title</h1>
+            <br />
+            <hr />
+            
+            <table class="table-responsive table-condensed">
+                <tr>
+                    <th></th>
+                    <th>Jiří Škreko</th>
+                </tr>
+               <tr>
+                   <th></th>
+                   <th>@Model.Address</th>
+               </tr>
+                <tr>
+                    <th></th>
+                    <th>@Model.Email</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th>@Model.Phone</th>
+                </tr>
+            </table>
+            <hr />
+        </div>
+        <div class="col-lg-5">
+            <br />
+            <br />
+            <br />
+            <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d5148.115975194869!2d18.271959327948732!3d49.82257531757438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x4713e345b7f6d459%3A0x51793ae4b1ab9f68!2zSGx1Ymluc2vDoSAxMTgzLzYsIDcwMiAwMCBNb3JhdnNrw6EgT3N0cmF2YSBhIFDFmcOtdm96!3m2!1d49.8225754!2d18.276336699999998!5e0!3m2!1scs!2scz!4v1487194865580" width="400" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
