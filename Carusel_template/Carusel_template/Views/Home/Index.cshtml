@@ -1,4 +1,4 @@
-﻿
+﻿@model Carusel_template.Models.Document
 @{
     ViewBag.Title = "Kyokushin Ostrava";
 }
@@ -18,18 +18,57 @@
         <div class="carousel-inner" role="listbox">
             <div class="item active">
                 <img src="~/Images/Other/1.jpg" alt="World">
+                <div class="carousel-pos">                  
+                        <h1 class="title1">@Model.Title1</h1>
+                        <h1 class="title2">@Model.Title2</h1>
+                        <h1 class="title3">@Model.Title3</h1>
+                        <h1 class="title4">@Model.Title4</h1>
+                        <p class="text1">@Model.Text1</p>
+                        <p class="text2">@Model.Text2</p>
+                        <p class="text3">@Model.Text3</p>
+                        <p class="text4">@Model.Text4</p>            
+                </div>
             </div>
 
             <div class="item">
                 <img src="~/Images/Other/2.jpg" alt="Men">
+                <div class="carousel-pos">
+                    <h1 class="title1">@Model.Title1</h1>
+                    <h1 class="title2">@Model.Title2</h1>
+                    <h1 class="title3">@Model.Title3</h1>
+                    <h1 class="title4">@Model.Title4</h1>
+                    <p class="text1">@Model.Text1</p>
+                    <p class="text2">@Model.Text2</p>
+                    <p class="text3">@Model.Text3</p>
+                    <p class="text4">@Model.Text4</p>
+                </div>
             </div>
 
             <div class="item">
                 <img src="~/Images/Other/3.jpg" alt="Women" />
+                <div class="carousel-pos">
+                    <h1 class="title1">@Model.Title1</h1>
+                    <h1 class="title2">@Model.Title2</h1>
+                    <h1 class="title3">@Model.Title3</h1>
+                    <h1 class="title4">@Model.Title4</h1>
+                    <p class="text1">@Model.Text1</p>
+                    <p class="text2">@Model.Text2</p>
+                    <p class="text3">@Model.Text3</p>
+                    <p class="text4">@Model.Text4</p>
+                </div>
             </div>
 
             <div class="item">
                 <img src="~/Images/Other/4.jpg" alt="Fitness">
+                <div class="carousel-pos">
+                    <h1 class="title2">@Model.Title2</h1>
+                    <h1 class="title3">@Model.Title3</h1>
+                    <h1 class="title4">@Model.Title4</h1>
+                    <p class="text1">@Model.Text1</p>
+                    <p class="text2">@Model.Text2</p>
+                    <p class="text3">@Model.Text3</p>
+                    <p class="text4">@Model.Text4</p>
+                </div>
             </div>
         </div>
 

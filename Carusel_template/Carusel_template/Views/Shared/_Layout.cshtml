@@ -24,37 +24,38 @@
                         @Html.ActionLink("Kyokushin SKMP Ostrava", "Index", "Home")
                     </li>
                     <li>
-                        <a>O nás</a>
+                        <a id="onas" href="#">O nás</a>
                     </li>
                     <li>
-                        <a>O karate</a>
+                        <a id="okarate" href="#">O karate</a>
                     </li>
                     <li>
-                        <a>O technice</a>
+                        <a id="otechnice" href="#">O technice</a>
                     </li>
                     <li>
-                        <a>O posilování</a>
+                        <a id="oposilovne" href="#">O posilování</a>
                     </li>
                     <li>
                         @Html.ActionLink("Galerie", "Gallery", "Home")
                     </li>
                     <li>
-                        @Html.ActionLink("Kontakt", "Kontakt", "Home")
+                        @Html.ActionLink("Kontakt", "Contact", "Home")
                     </li>
                 </ul>
             </div>
         </div>
     </div>
 
-    <div class="body-content">
+    <div id="body-cont">
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p> @DateTime.Now.Date.ToShortDateString() &bull; @Model.Email  &bull; @Model.Phone  &bull; @Model.Address  &bull; @Model.ItFirma </p>
         </footer>
     </div>
 
     <script src="~/Scripts/jquery-1.10.2.min.js"></script>
     <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/texts.scripts.js"></script>
 </body>
 </html>

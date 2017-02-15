@@ -1,13 +1,9 @@
 ﻿body {
     padding-top: 20px;
     padding-bottom: 20px;
+    color:white;
 }
 
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 0px;
-    padding-right: 0px;
-}
 
 /* Set width on the form input elements since they're 100% wide by default */
 input,
@@ -16,9 +12,19 @@ textarea {
     max-width: 280px;
 }
 
+a {
+    pointer-events:initial;
+}
+
 
     img {
         width:1350px;
         height:600px;
     }
 
+.carousel-pos{
+    left:250px;
+    top: 100px;
+    position:fixed;
+    color:white;
+}

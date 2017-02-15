@@ -1,19 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <document>
-  <section-karate>
-    <o-nas></o-nas>
-    <o-karate></o-karate>
-  </section-karate>
-  <section-trenink>
-    <o-treninku></o-treninku>
-    <o-programu></o-programu>
-  </section-trenink>
-  <section-posilovna>
-    <o-posilování></o-posilování>
-    <o-nasiposilovne></o-nasiposilovne>
-  </section-posilovna>
-  <section-technika>
-    <technika-nacvik></technika-nacvik>
-    <technika-fyzicka></technika-fyzicka>
-  </section-technika>
+  <title>
+    <head>a</head>
+    <head>b</head>
+    <head>c</head>
+    <head>d</head>
+  </title>
+  <article>
+    <text>aaaaaaaa</text>
+    <text>bbbbbbbb</text>
+    <text>cccccccc</text>
+    <text>dddddddd</text>
+  </article>
+  <footer>
+    <mail>email@email.cz</mail>
+    <phone>77777777777</phone>
+    <address>Dlouha adresa 15; 700 30 Ostrava</address>
+    <it-company>IT program</it-company>
+  </footer>
 </document>
