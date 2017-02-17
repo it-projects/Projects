@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <document>
   <title>
-    <head>a</head>
-    <head>b</head>
-    <head>c</head>
-    <head>d</head>
+    <head>O našem klubu</head>
+    <head>Kyokushin</head>
+    <head>Technika</head>
+    <head>Krátce o posilování</head>
   </title>
   <article>
     <text>aaaaaaaa</text>
@@ -14,8 +14,10 @@
   </article>
   <footer>
     <mail>email@email.cz</mail>
-    <phone>77777777777</phone>
-    <address>Dlouha adresa 15; 700 30 Ostrava</address>
+    <phone>+420 601 297 467</phone>
+    <address>Hlubinská 1183/6</address>
+    <city>Ostrava</city>
+    <postCode>702 00</postCode>
     <it-company>IT program</it-company>
   </footer>
 </document>

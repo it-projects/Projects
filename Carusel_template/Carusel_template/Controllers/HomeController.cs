@@ -31,7 +31,9 @@ namespace Carusel_template.Controllers
             doc.Email = pom[8];
             doc.Phone = pom[9];
             doc.Address = pom[10];
-            doc.ItFirma = pom[11];
+            doc.City = pom[11];
+            doc.PostCode = pom[12];
+            doc.ItFirma = pom[13];
 
             return doc;
         }

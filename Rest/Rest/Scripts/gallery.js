@@ -4,7 +4,7 @@
 $("#gallery").hide();
 
 var i;
- 
+
 function photo_in(int) {
     $("#preview-gallery").slideUp(1000);
     $("#gallery").show(500);
@@ -24,7 +24,7 @@ function photo_slider_right(int) {
     $("#" + i).remove();
     --i;
     if (i === 0) {
-        i = 36;    
+        i = 36;
     }
     $("#photoBody").append("<img id=\"" + i + "\" class=\"img-responsive slide\" src=\"../Images/Galery/IMG_" + i + ".jpg\" />").slideDown(500);
 }
@@ -34,7 +34,7 @@ $(document).ready(function () {
         photo_slider_right(i);
     });
 
-    $("#next").click(function () {       
+    $("#next").click(function () {
         photo_slider_left(i);
     });
 });
@@ -61,12 +61,12 @@ $(document).ready(function () {
             i = 31;
         }
         photo_in(i);
-  
+
     });
-   
+
 });
 
-var galleryClose = function () {   
+var galleryClose = function () {
     $("#preview-gallery").slideDown(1000);
     $("#gallery").hide();
     $("#photoBody img").remove();

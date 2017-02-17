@@ -7,7 +7,7 @@ namespace XML_Reader
 {
     public class ReadClass
     {
-        private const string path = "C:/Users/Radim/Documents/Visual Studio 2015/Projects/Projects/Carusel_template/Carusel_template/Models/";
+        private const string path = "~/Models/";
 
         private const string loginName_file = "XML_Login.xml";
         private const string textName_file = "XML_Text.xml";
@@ -35,7 +35,7 @@ namespace XML_Reader
             doc.Load(path + textName_file);
             Collection<string> helper = new Collection<string>();
 
-            foreach (var n in doc.SelectNodes("/document/title"))        //4x title
+            foreach (var n in doc.SelectNodes("/document/body-text"))        //4x title
             {                                                            
                 foreach (XmlNode m in (IEnumerable)n)                   
                 {                                                        
@@ -43,7 +43,7 @@ namespace XML_Reader
                 }
             }
 
-            foreach (var n in doc.SelectNodes("/document/article"))       // 4x povídání
+            foreach (var n in doc.SelectNodes("/document/customer"))       // 4x povídání
             {                                                              
                 foreach (XmlNode m in (IEnumerable)n)                    
                 {                                                         

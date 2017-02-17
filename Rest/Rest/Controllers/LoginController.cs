@@ -63,11 +63,11 @@ namespace Rest.Controllers
         }
 
         [HttpPost]
-        public ActionResult JL_Pdf(HttpPostedFileBase  Jl)
+        public ActionResult JL_Pdf(HttpPostedFileBase Jl)
         {
             string JL = "JL.pdf";
 
-            if(Jl.FileName == JL)
+            if (Jl.FileName == JL)
             {
                 Jl.SaveAs(Server.MapPath("~/Files/") + Jl.FileName);
             }
