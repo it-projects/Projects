@@ -13,23 +13,23 @@
             <table class="table-responsive small table-condensed" style="color: #2e2929; margin-top: 5%">
                 <tr>
                     <th>Jméno:</th>
-                    <th>Ester Polednová</th>
+                    <th>{{name}}</th>
                 </tr>
                 <tr>
                     <th>Adresa:</th>
-                    <th>@Model.Adress</th>
+                    <th>{{address}}</th>
                 </tr>
                 <tr>
                     <th></th>
-                    <th>@Model.PostCode @Model.City</th>
+                    <th>{{postCode + " " + city}}</th>
                 </tr>
                 <tr>
                     <th>Telefon:</th>
-                    <th>@Model.Phone</th>
+                    <th>{{phone}}}</th>
                 </tr>
                 <tr>
                     <th>Email:</th>
-                    <th>@Model.Email</th>
+                    <th>{{email}}</th>
                 </tr>
             </table>
         </div>

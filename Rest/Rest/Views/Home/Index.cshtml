@@ -1,12 +1,12 @@
-﻿@model Rest.Models.Document
+﻿
 @{
     ViewBag.Title = "Domů";
 }
 
 
 <div class="blog-post text-justify">
-    <h4 class="font-bety center-top">@Model.HeadTitle @Model.Title</h4>
-    <p class="lead blog-description">@Model.Text</p>
+    <h4 class="font-bety center-top">{{headTitle + title}}</h4>
+    <p class="lead blog-description">{{text}} </p>
 
 
     <div class="col-lg-8">

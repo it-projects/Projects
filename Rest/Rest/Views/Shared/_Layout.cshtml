@@ -21,10 +21,14 @@
 
     <!--STYLES-->
     <link href="~/Content/Styles.less" rel="stylesheet" />
+    
 
     <title>Prototip</title>
 </head>
 <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="~/Scripts/document.js"></script>
+
     <div class="navbar-wrapper">
         <div id="head" class="container">
             <nav class="navbar navbar-fixed-top">
@@ -64,7 +68,7 @@
         </div>
     </div>  <!--MENU-->
 
-    <div class="container container-background">
+    <div ng-app="myApp" ng-controller="myController" class="container container-background">
         <div class="col-sm-8 blog-main">
             <div class="blog-header">
 
@@ -126,23 +130,23 @@
                 </tr>
                 <tr>
                     <th></th>
-                    <th>@Model.Adress</th>
+                    <th ng-bind="address"></th>
                 </tr>
                 <tr>
                     <th></th>
-                    <th>@Model.PostCode @Model.City</th>
+                    <th> {{postCode + " " + city}}</th>
                 </tr>
                 <tr>
                     <th></th>
-                    <th>@Model.Company </th>
+                    <th> {{company}}</th>
                 </tr>
                 <tr>
                     <th></th>
-                    <th>@Model.Phone</th>
+                    <th>{{phone}}</th>
                 </tr>
                 <tr>
                     <th></th>
-                    <th>@Model.Email</th>
+                    <th>{{email}}</th>
                 </tr>
             </table>
 
@@ -155,7 +159,6 @@
     <script src="~/Scripts/jquery.validate.min.js"></script>
     <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
     <script src="~/Scripts/bootstrap-support-ie10-width.js"></script>
-
     <script src="~/Scripts/gallery.js"></script>
 
 </body>

@@ -7,16 +7,11 @@ namespace XML_Reader
 {
     public class ReadClass
     {
-        private const string path = "~/Models/";
-
-        private const string loginName_file = "XML_Login.xml";
-        private const string textName_file = "XML_Text.xml";
-
         private readonly XmlDocument doc = new XmlDocument();
 
-        public Collection<string> Login_reader()
+        public Collection<string> Login_reader(string path, string file)
         {
-            doc.Load(path + loginName_file);
+            doc.Load(path + file);
             Collection<string> helper = new Collection<string>();
 
             foreach(var n in doc.SelectNodes("/users/user"))
@@ -30,9 +25,9 @@ namespace XML_Reader
             return helper;
         }
 
-        public Collection<string> Text_reader()
+        public Collection<string> Text_reader(string path, string file)
         {
-            doc.Load(path + textName_file);
+            doc.Load(path + file);
             Collection<string> helper = new Collection<string>();
 
             foreach (var n in doc.SelectNodes("/document/body-text"))        //4x title
